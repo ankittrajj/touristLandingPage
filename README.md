@@ -1,3 +1,3 @@
 # touristLandingPage
 Landing Page for visitors
-![](touristLandingPage/img)
+![](img/touristLandingPage)
