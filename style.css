@@ -1,0 +1,138 @@
+/* color - #00b894 */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono ,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623),
+    rgba(235, 100, 100, 0.158)) ,url('mike-swigunski-BjLvHe_Bb9o-unsplash.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%; height: 15vh;
+    background: rgba(0, 0, 0, 0.1); color:orange;
+    display: flex; justify-content: space-between; align-items: center;
+    text-transform: capitalize;
+}
+nav .logo{
+     text-align: center; width: 25%;
+    font-size: 20px; font-weight: 500px;
+}
+/* ------------------logo animate--------------  */
+
+ .animated infinite fade delay-2s{
+     animation-duration: 1s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+}
+nav .menu {
+    width: 45%;
+    display: flex; justify-content: space-around;
+}
+nav .menu a{
+    text-decoration: none; color: rgba(255, 255, 255, 0.486);
+    width: 25%;
+    font-weight: bold;
+}  
+nav .menu a:hover{
+    color:#00b894 ;
+    text-decoration: underline;
+}
+nav .menu a:first-child{
+    color:#00b894 ;
+}
+.alltext{
+    height: 100%;
+    width: 85vh;
+    margin-left: 380px;
+    display: flex;justify-content: center; align-items: center; text-align: center;
+
+}
+
+.text h1{
+    padding-bottom: 3em;
+    /* margin: 60px; */
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-shadow: 2px 2px 1px rgba(255, 166, 0, 0.603);
+    text-decoration: underline;
+    /* border: 2px solid red; */
+}
+.text h2{
+    font-size: 2em;
+    border-bottom:;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    margin: 20px 0 30px 0;
+    text-shadow: 2px 2px 1px gray ;
+    /* border: 2px solid red; */
+
+}
+.text .changeContent::after{
+
+    content: " ";
+    animation: changeText 2s infinite linear;
+    color:aqua;
+}
+@keyframes changeText{
+    0%{content: 'Karad';}
+    10%{content: 'Aurangabad';}
+    20%{content: 'Hyderabad';}
+    30%{content: 'Bangalore';}
+    40%{content: 'Udupi';}
+    50%{content: 'Rourkela';}
+    60%{content: 'Itanagar';}
+    70%{content: 'Delhi';}
+    80%{content: 'Mumbai';}
+    90%{content: 'Kolkata';}
+    100%{content: 'Vizag';}
+}
+
+.text p{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px  teal;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    /* border: 2px solid red; */
+}
+
+.text .btnone ,
+.text .btntwo{
+    /* border:2px solid red; */
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 20px;
+    transition: all .5s ease-in;
+}
+.text .btntwo{
+    background: #00b894;
+    color: white;   
+}
+.btnone:hover{
+    background: #00b894;
+    color: white; 
+    text-decoration: underline;
+}.btntwo:hover{
+    background: #fff;
+    color: #000;
+    text-decoration: underline;
+}
